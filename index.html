@@ -3,49 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nama Bisnis Anda</title>
+    <title>SPA Modern & Simple</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Nama Bisnis Anda</h1>
-      <p>Slogan Bisnis Anda</p>
-    </header>
+    <div id="app">
+      <header>
+        <h1>SPA Modern & Simple</h1>
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Profile</a>
+          <a href="#">Portofolio</a>
+          <a href="#">Contact Us</a>
+        </nav>
+      </header>
 
-    <main>
-      <section id="about">
-        <h2>Tentang Kami</h2>
-        <p>
-          Deskripsi singkat tentang bisnis Anda, apa yang Anda tawarkan, dan
-          mengapa pelanggan harus memilih Anda.
-        </p>
-      </section>
+      <main>
+        <router-view></router-view>
+      </main>
+    </div>
 
-      <section id="services">
-        <h2>Layanan Kami</h2>
-        <ul>
-          <li>Daftar layanan yang Anda tawarkan.</li>
-          <li>Deskripsi singkat untuk setiap layanan.</li>
-        </ul>
-      </section>
-
-      <section id="contact">
-        <h2>Kontak Kami</h2>
-        <p>
-          Informasi kontak Anda, seperti alamat email, nomor telepon, dan alamat
-          fisik.
-        </p>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
-          <input type="text" name="name" placeholder="Nama" />
-          <input type="email" name="email" placeholder="Email" />
-          <textarea name="message" placeholder="Pesan"></textarea>
-          <button type="submit">Kirim</button>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <p>&copy; 2023 Nama Bisnis Anda</p>
-    </footer>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="app.js"></script>
   </body>
 </html>

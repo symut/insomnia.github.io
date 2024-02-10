@@ -15,57 +15,36 @@ h1 {
   margin: 0;
 }
 
-p {
-  margin: 10px 0;
+nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: #333;
 }
 
 main {
   padding: 20px;
 }
 
-section {
-  margin-bottom: 20px;
+.home,
+.profile,
+.portofolio,
+.contact-us {
+  display: none;
 }
 
-#about p {
-  text-align: justify;
-}
-
-#services ul {
-  list-style: none;
-  padding: 0;
-}
-
-#services li {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-}
-
-#contact form {
-  margin: 20px auto;
-  width: 500px;
-}
-
-#contact input,
-#contact textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ddd;
-}
-
-#contact button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+.active {
+  display: block;
 }
